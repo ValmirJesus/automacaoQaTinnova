@@ -1,0 +1,8 @@
+---
+default: --profile pretty -p chrome -p html --publish-quiet
+
+pretty: --format pretty
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
+
+html: --format pretty --format html --out reports/Rel_Cenarios_Testes_<%=Time.now.strftime("%Y%m%d%H%M%S")%>.html
